@@ -1,8 +1,6 @@
 streamlit==0.84.2
 numpy==1.19
 pandas==1.1.5
-scipy==1.4.1
 matplotlib==3.2.2
 seaborn==0.11.1
 scikit-learn==0.22.2
-protobuf==3.20.3
