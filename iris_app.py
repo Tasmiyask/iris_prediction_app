@@ -18,7 +18,7 @@ rf_clf = RandomForestClassifier(n_jobs = -1, n_estimators = 100)
 rf_clf.fit(X_train, y_train)
 log_reg = LogisticRegression(n_jobs = -1)
 log_reg.fit(X_train, y_train)
-@st.cache()
+# @st.cache()
 def prediction(model, sepal_length, sepal_width, petal_length, petal_width):
   species = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
   species = species[0]
