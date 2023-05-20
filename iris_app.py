@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression  
 from sklearn.ensemble import RandomForestClassifier
+from warnings import filterwarnings
+filterwarnings(action='ignore', category=DeprecationWarning, message='`np.bool` is a deprecated alias')
 st.set_page_config(page_title='Iris Species Prediction App', page_icon="🌸")
 iris_df = pd.read_csv("iris-species.csv")
 iris_df['Label'] = iris_df['Species'].map({'Iris-setosa': 0, 'Iris-virginica': 1, 'Iris-versicolor':2})
